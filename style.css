@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('./assets/Fonts/proximanova_light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    display: flex;
+    flex-direction: column;    
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: 'Proxima-Nova', sans-serif;
+    
+}
+*{
+    box-sizing: border-box;
+}
+/*header styles*/
+.header-my-information{        
+    border-bottom: 1px solid #000;
+}
+.header-content{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em 30em;
+}
+.my-photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.my-FIO{
+    font-size: 4em;
+}
+.link{
+    text-decoration: none;
+    color: grey;
+}
+.contact-list{
+    display: flex;
+    color: gray;
+}
+.contact-text{
+    color: gray;
+}
+.backline {
+    position: relative; /* Позволяет тени управлять положением */
+}
+
+.backline::after {
+    content: ''; /* Пустой контент для псевдоэлемента */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Выравнивание по левому краю */
+    right: 0; /* Выравнивание по правому краю */
+    bottom: 0; /* Позиция внизу */
+    height: 60px; /* Установите желаемую высоту подчеркивания */
+    background-color: yellow; /* Цвет подчеркивания */
+    z-index: -1; /* Помещаем под текст */
+}
+/*skill-section styles*/
+.skill-section{
+    
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 900px;
+    gap: 10px;    
+    padding: 2em 20em 2em 20em;
+}
+.skill-section article{
+    display: flex;    
+    flex-direction: column; 
+    width: 400px;
+    gap:0.6em;
+}
+.article-name{
+    font-size: 1.8em;
+}
+.underline {
+    position: relative; /* Позволяет тени управлять положением */
+}
+
+.underline::after {
+    content: ''; /* Пустой контент для псевдоэлемента */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Выравнивание по левому краю */
+    right: 0; /* Выравнивание по правому краю */
+    bottom: 0; /* Позиция внизу */
+    height: 12px; /* Установите желаемую высоту подчеркивания */
+    background-color: yellow; /* Цвет подчеркивания */
+    z-index: -1; /* Помещаем под текст */
+}
+.fat-words{
+    font-weight: bold !important;
+}
+.convential-words{
+    font-style: italic;
+}
+.list-item{
+    position: relative;
+    padding-left: 20px;
+}
+.list-item:before{
+    content: '•';
+    position: absolute;
+    left: 0;
+}
+.list{
+    line-height: 25px;
+}
